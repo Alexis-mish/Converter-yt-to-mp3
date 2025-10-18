@@ -29,13 +29,14 @@ El objetivo es proporcionar una herramienta sencilla y rápida para obtener la p
 La aplicación mantiene una estructura estándar de Flask:
 Converter-yt-to-mp3/
 ├── app.py                      # Punto de entrada principal y lógica del servidor
-├── requirements.txt            # Lista de dependencias (Flask, yt-dlp) puedes instalar lo con el siguiente comando | pip install -r requirements.txt
+├── requirements.txt            # (Recomendado) Lista de dependencias (Flask, yt-dlp)
 ├── downloads/                  # Directorio para archivos MP3 convertidos y finales
 ├── static/                     # Archivos estáticos
-│   ├── script.js               # Lógica del frontend 
-│   └── styles.css              # Archivo CSS 
-└── templates/                  # Archivos HTML 
+│   ├── script.js               # Lógica del frontend (Fetch API, DOM manipulation)
+│   └── styles.css              # Archivo CSS (Aunque usas Tailwind en index.html)
+└── templates/                  # Archivos HTML renderizados
     └── index.html              # Interfaz de usuario
+
 
 ---
 
