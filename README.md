@@ -27,5 +27,33 @@ El objetivo es proporcionar una herramienta sencilla y rápida para obtener la p
 ## Estructura del Proyecto
 
 La aplicación mantiene una estructura estándar de Flask:
+Converter-yt-to-mp3/
+├── app.py                      # Punto de entrada principal y lógica del servidor
+├── requirements.txt            # Lista de dependencias (Flask, yt-dlp) puedes instalar lo con el siguiente comando | pip install -r requirements.txt
+├── downloads/                  # Directorio para archivos MP3 convertidos y finales
+├── static/                     # Archivos estáticos
+│   ├── script.js               # Lógica del frontend 
+│   └── styles.css              # Archivo CSS 
+└── templates/                  # Archivos HTML 
+    └── index.html              # Interfaz de usuario
 
-Converter-yt-to-mp3/ ├── app.py # Lógica del servidor, rutas y manejo de yt-dlp. ├── downloads/ # Directorio donde se guardan los archivos MP3 finales. ├── static/ │ └── script.js # Lógica JavaScript para la interacción con la API. └── templates/ └── index.html # Interfaz de usuario principal.
+---
+
+## Requisitos e Instalación
+
+### Requisitos Previos
+
+Asegúrate de tener instalados los siguientes componentes:
+
+* **Python 3.8 o superior**
+* **FFmpeg:** **Este es un requisito externo y crítico**. Debe estar instalado en tu sistema y su ejecutable debe ser accesible desde la variable de entorno `PATH`. `yt-dlp` lo necesita para la conversión a MP3.
+
+---
+## Ejecución
+Puedes ejecutarlo con **app.py**
+
+### Clonar el Repositorio
+
+```bash
+git clone [https://github.com/Alexis-mish/Converter-yt-to-mp3.git](https://github.com/Alexis-mish/Converter-yt-to-mp3.git)
+cd Converter-yt-to-mp3
