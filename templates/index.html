@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube → MP3 Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/static/script.js"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+    <div class="bg-white shadow-xl rounded-2xl p-10 w-full max-w-md text-center">
+        <h1 class="text-3xl font-bold mb-6 text-red-600"> YouTube → MP3</h1>
+        <input id="url" type="text" placeholder="Enter YouTube URL"
+               class="border border-gray-300 rounded-lg w-full p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-red-500">
+        <button id="convertBtn"
+                class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg w-full transition">
+            Convert
+        </button>
+        <div id="progress" class="hidden mt-4 text-gray-700">Converting... please wait </div>
+        <div id="result" class="mt-4"></div>
+    </div>
+</body>
+</html>
